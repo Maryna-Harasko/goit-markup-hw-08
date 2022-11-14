@@ -1,8 +1,8 @@
 .advanteg__list {
     @extend %list;
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
+    // display: flex;
+    // justify-content: center;
+    // column-gap: 30px;
 }
 
 .advanteg__item {
@@ -10,10 +10,10 @@
 }
 
 .advanteg__img {
-    @include flexCenter();
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
+    // @include flexCenter();
+    // margin-bottom: 30px;
+    // width: 270px;
+    // height: 120px;
     background-color: var(--ligth-brg-color);
     border-radius: 4px;
 }

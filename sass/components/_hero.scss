@@ -2,9 +2,9 @@
   text-align: center;
 
   &__overlay {
-    @include flexCenter();
-    @include marginCenter();
-    max-width: 1600px;
+    // @include flexCenter();
+    // @include marginCenter();
+    // max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero_image.jpg);
@@ -14,7 +14,7 @@
   }
 
   &__title {
-    @include marginCenter();
+    // @include marginCenter();
     margin-bottom: 30px;
     max-width: 696px;
 

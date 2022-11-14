@@ -1,6 +1,6 @@
 .team {
   background-color: var(--ligth-brg-color);
-  text-align: center;
+  
   line-height: 1.19;
 
   &__title {
@@ -9,8 +9,8 @@
 
   &__list {
     @extend %list;
-    @include flexCenter();
-    column-gap: 30px;
+    // @include flexCenter();
+    // column-gap: 30px;
   }
 
   &-item {
@@ -27,6 +27,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 16px;
+  text-align: center;
 
   &__subtitle {
     margin-bottom: 10px;

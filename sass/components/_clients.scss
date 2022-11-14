@@ -4,19 +4,19 @@
 
 .clients__list {
     @extend %list;
-    @include flexCenter();
-    column-gap: 30px;
+    // @include flexCenter();
+    // column-gap: 30px;
 }
 
 .clients__item {
-    @include flexCenter();
-    width: calc((100% - 150px) / 6);
+    // @include flexCenter();
+    // width: calc((100% - 150px) / 6);
     height: 92px;
 }
 
 .clients__link {
     @include link();
-    @include flexCenter();
+    // @include flexCenter();
     width: 100%;
     height: 100%;
     border: 1px solid var(--icon-color);
@@ -30,7 +30,7 @@
 }
 
 .clients__icon {
-    @include flexCenter();
+    // @include flexCenter();
 
     fill: var(--icon-color);
     transition: fill $timing-function $cubic-hover;

@@ -3,9 +3,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &__section {
-    @include flexCenter($type: flex, $justify-content: space-between, $align-items: baseline);
-  }
+  // &__section {
+  //   @include flexCenter($type: flex, $justify-content: space-between, $align-items: baseline);
+  // }
 
   &__title {
     margin-bottom: 20px;
@@ -16,20 +16,21 @@
     text-transform: uppercase;
   }
 
-  &__form {
-    display: flex;
-    align-items: flex-end;
-  }
+  // &__form {
+  //   display: flex;
+  //   align-items: flex-end;
+  // }
 
   &__subscription-form {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     margin-right: 12px;
   }
 
   &__input {
+    display: block;
     padding-left: 16px;
-    width: 358px;
+    // width: 358px;
     height: 50px;
     background-color: var(--dark-bgr-color);
     border-radius: 4px;
