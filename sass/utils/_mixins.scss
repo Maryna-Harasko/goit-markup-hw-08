@@ -1,0 +1,58 @@
+@mixin flexCenter($type: flex, $justify-content: center, $align-items: center) {
+  display: $type;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin link($display: block, $decor: none, $color: inherit) {
+  display: $display;
+  text-decoration: $decor;
+  color: $color;
+}
+
+@mixin pseudo($position:absolute, $content:'', $width:100%) {
+  position: $position;
+  content: $content;
+  width: $width;  
+}
+
+@mixin marginCenter {
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+@mixin button($width:216px) {
+  @include flexCenter();
+  @include marginCenter();
+  width: $width;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color $timing-function $cubic-hover;
+}
+
+@mixin social-link {
+  @include link();
+  @include flexCenter();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color $timing-function $cubic-hover;
+}
+
+@mixin positionCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

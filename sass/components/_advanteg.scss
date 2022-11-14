@@ -1,0 +1,33 @@
+.advanteg__list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.advanteg__item {
+    width: calc((100% - 90px) / 4);
+}
+
+.advanteg__img {
+    @include flexCenter();
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--ligth-brg-color);
+    border-radius: 4px;
+}
+
+.advanteg__subtitle {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.advanteg__text {
+    font-size: 14px;
+    line-height: 1.71;
+}

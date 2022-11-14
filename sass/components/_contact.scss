@@ -1,0 +1,28 @@
+.contact__list {
+    @extend %list;
+    @include flexCenter();
+    column-gap: 50px;
+}
+
+.contact__link {
+    @include link();
+    @include flexCenter();
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color $timing-function $cubic-hover;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
