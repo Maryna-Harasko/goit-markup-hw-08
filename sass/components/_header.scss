@@ -1,8 +1,11 @@
 .header {
     border-bottom: 1px solid var(--border-color);
-
 }
 
-// .flex-header{
-//     @include flexCenter();
-// }
+.flex-header{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+}

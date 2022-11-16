@@ -9,8 +9,6 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-
-      // @include flexCenter($type: flex, $justify-content: space-between, $align-items: baseline);
     }
 
 }
@@ -32,9 +30,6 @@
       margin-right: 94px;
     }
   }
-
-    // @include flexCenter($type: flex, $justify-content: space-between, $align-items: baseline);
-  
 
   &__title {
     margin-bottom: 32px;
