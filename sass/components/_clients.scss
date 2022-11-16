@@ -1,42 +1,55 @@
 .clients__title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .clients__list {
-    @extend %list;
-    // @include flexCenter();
-    // column-gap: 30px;
+  @extend %list;
+  @include flexCenter();
+  flex-wrap: wrap;
+  gap: 30px;
+
+@media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    }
 }
 
 .clients__item {
-    // @include flexCenter();
-    // width: calc((100% - 150px) / 6);
-    height: 92px;
+  @include flexCenter();
+  width: calc((100% - 30px) / 2);
+  height: 92px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
-    @include link();
-    // @include flexCenter();
-    width: 100%;
-    height: 100%;
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
-    transition: border $timing-function $cubic-hover;
+  @include link();
+  @include flexCenter();
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  transition: border $timing-function $cubic-hover;
 
-    &:hover,
-    &:focus {
-        border: 1px solid var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .clients__icon {
-    // @include flexCenter();
+  @include flexCenter();
 
-    fill: var(--icon-color);
-    transition: fill $timing-function $cubic-hover;
+  fill: var(--icon-color);
+  transition: fill $timing-function $cubic-hover;
 
-    .clients__link:hover &,
-    .clients__link:focus & {
-            fill: var(--accent-color);
-    }
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--accent-color);
+  }
 }
