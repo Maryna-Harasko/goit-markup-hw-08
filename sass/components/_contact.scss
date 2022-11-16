@@ -1,7 +1,12 @@
 .contact__list {
     @extend %list;
-    // @include flexCenter();
-    // column-gap: 50px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        @include flexCenter();
+            column-gap: 50px;
+    }
+   
 }
 
 .contact__link {
