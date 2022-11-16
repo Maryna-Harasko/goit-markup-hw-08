@@ -145,5 +145,5 @@
 
 .button__form {
   margin-top: 30px;
-  @include button($width: 200px);
+  @include button();
 }

@@ -91,7 +91,7 @@
 
   &__button {
     @include marginCenter();
-    @include button($width: 200px);
+    @include button();
 
     @media screen and (min-width: 1200px){
       margin: 0;

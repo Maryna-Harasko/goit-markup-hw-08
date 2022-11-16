@@ -2,34 +2,63 @@
   text-align: center;
 
   &__overlay {
-    // @include flexCenter();
+    @include flexCenter();
     // @include marginCenter();
-    // max-width: 1600px;
+    max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero_image.jpg);
+      url(../../images/hero_img_mob.jpg);
+    @include respBackg($url: url(../../images/hero_img_mob@2x.jpg));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
+    @media screen and (min-width:768px) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../../images/hero_img_tab.jpg);
+        @include respBackg($url: url(../../images/hero_img_tab@2x\ .jpg));
+    }
+
+    @media screen and (min-width:768px) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/hero_image.jpg);
+      @include respBackg($url: url(../../images/hero_image@2x.jpg));
+    }
   }
 
   &__title {
-    // @include marginCenter();
+    @include marginCenter();
     margin-bottom: 30px;
-    max-width: 696px;
+    // max-width: 696px;
 
     color: var(--white-color);
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+    // font-size: 44px;
+    // line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      max-width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }
 
 .button {
   @include button();
+
+  @media screen and (min-width: 1200px) {
+    @include button($width: 216px);
+  }
   &:hover,
   &:focus {
     background-color: var(--btn-bgc-hover);

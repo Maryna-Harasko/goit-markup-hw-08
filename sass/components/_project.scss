@@ -1,4 +1,8 @@
 .project {
+  @media screen and (max-width: 1199px) {
+      display: none;
+  }
+
   padding-top: 0;
 
   &__title {
@@ -7,20 +11,20 @@
 
   &__list {
     @extend %list;
-    // @include flexCenter();
-    // column-gap: 30px;
+    @include flexCenter();
+    column-gap: 30px;
   }
 
   &__item {
     position: relative;
-    // width: calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 
   &__direction {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    // width: 100%;
+    width: 100%;
     padding-top: 27px;
     padding-bottom: 27px;
 
