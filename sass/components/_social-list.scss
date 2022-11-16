@@ -1,6 +1,6 @@
 .social-list {
   @extend %list;
-  // @include flexCenter();
+  @include flexCenter();
   column-gap: 10px;
 }
 
