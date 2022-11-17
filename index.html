@@ -165,16 +165,64 @@
         </div>
       </section>
       <section class="team section">
-        <div class="container">
+        <div class="container container__team">
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list">
             <li class="team-item">
-              <img
-                src="./images/product_designer.jpg"
-                alt="фото дизайнера продукту"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/product_designer.webp    1x,
+                    ./images/mobile/product_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/product_designer.webp    1x,
+                    ./images/tablet/product_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/product_designer.webp    1x,
+                    ./images/desktop/product_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/product_designer.jpg    1x,
+                    ./images/mobile/product_designer@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/product_designer.jpg    1x,
+                    ./images/tablet/product_designer@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/product_designer.jpg    1x,
+                    ./images/desktop/product_designer@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  loading="lazy"
+                  src="./images/mobile/product_designer.jpg"
+                  alt="фото дизайнера продукту"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__subtitle">Ігор Дем'яненко</h3>
                 <p class="team-card__text" lang="en">Product Designer</p>
@@ -211,7 +259,60 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/frontend_dev.jpg" alt="фото розробника" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/frontend_dev.webp    1x,
+                    ./images/mobile/frontend_dev@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/frontend_dev.webp    1x,
+                    ./images/tablet/frontend_dev@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/frontend_dev.webp    1x,
+                    ./images/desktop/frontend_dev@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/frontend_dev.jpg    1x,
+                    ./images/mobile/frontend_dev@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/frontend_dev.jpg    1x,
+                    ./images/tablet/frontend_dev@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/frontend_dev.jpg    1x,
+                    ./images/desktop/frontend_dev@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  loading="lazy"
+                  src="./images/mobile/frontend_dev.jpg"
+                  alt="фото розробника"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__subtitle">Ольга Рєпіна</h3>
                 <p class="team-card__text" lang="en">Frontend Developer</p>
@@ -248,7 +349,42 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/marketing.jpg" alt="фото маркетолога" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/mobile/marketing.webp 1x, ./images/mobile/marketing@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/tablet/marketing.webp 1x, ./images/tablet/marketing@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/desktop/marketing.webp 1x, ./images/desktop/marketing@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mobile/marketing.jpg 1x, ./images/mobile/marketing@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/tablet/marketing.jpg 1x, ./images/tablet/marketing@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/desktop/marketing.jpg 1x, ./images/desktop/marketing@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  loading="lazy"
+                  src="./images/mobile/marketing.jpg"
+                  alt="фото маркетолога"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__subtitle">Микола Тарасов</h3>
                 <p class="team-card__text" lang="en">Marketing</p>
@@ -285,7 +421,54 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/ui_designer.jpg" alt="фото дизайнера" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/ui_designer.webp    1x,
+                    ./images/mobile/ui_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ui_designer.webp    1x,
+                    ./images/tablet/ui_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/ui_designer.webp    1x,
+                    ./images/desktop/ui_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mobile/ui_designer.jpg 1x, ./images/mobile/ui_designer@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/tablet/ui_designer.jpg 1x, ./images/tablet/ui_designer@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/ui_designer.jpg    1x,
+                    ./images/desktop/ui_designer@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  loading="lazy"
+                  src="./images/mobile/ui_designer.jpg"
+                  alt="фото дизайнера"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__subtitle">Михайло Єрмаков</h3>
                 <p class="team-card__text" lang="en">UI Designer</p>
