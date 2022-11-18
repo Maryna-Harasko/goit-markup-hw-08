@@ -129,34 +129,70 @@
           <h2 class="project__title title">Чим ми займаємося</h2>
           <ul class="project__list">
             <li class="project__item">
-              <img
-                src="./images/frontend.jpg"
-                alt="розробник робить верстку"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/frontend.webp 1x, ./images/desktop/frontend@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/desktop/frontend.jpg 1x, ./images/desktop/frontend@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  loading="lazy"
+                  src="./images/desktop/frontend.jpg"
+                  alt="розробник робить верстку"
+                  sizes="(min-width: 1200px) 33vw"
+                />
+              </picture>
               <div class="project__direction">
                 <h3 class="project__subtitle">Десктопні додатки</h3>
               </div>
             </li>
             <li class="project__item">
-              <img
-                src="./images/adaptabil.jpg"
-                alt="розробник робить сайт адаптивним"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/adaptabil.webp 1x, ./images/desktop/adaptabil@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/desktop/adaptabil.jpg 1x, ./images/desktop/adaptabil@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  loading="lazy"
+                  src="./images/desktop/adaptabil.jpg"
+                  alt="розробник робить сайт адаптивним"
+                  sizes="(min-width: 1200px) 33vw"
+                />
+              </picture>
               <div class="project__direction">
                 <h3 class="project__subtitle">Мобільні додатки</h3>
               </div>
             </li>
             <li class="project__item">
-              <img
-                src="./images/design.jpg"
-                alt="розробка дизайну на планшеті"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/design.webp 1x, ./images/desktop/design@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/desktop/design.jpg 1x, ./images/desktop/design@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  loading="lazy"
+                  src="./images/desktop/design.jpg"
+                  alt="розробка дизайну на планшеті"
+                  sizes="(min-width: 1200px) 33vw"
+                />
+              </picture>
               <div class="project__direction">
                 <h3 class="project__subtitle">Дизайнерські рішення</h3>
               </div>
