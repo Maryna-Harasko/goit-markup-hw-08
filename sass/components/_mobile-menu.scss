@@ -38,23 +38,18 @@
   outline: none;
   transition: color $timing-function $cubic-hover;
 
-  @media screen and (min-width: 768px) {
-      display: none;
-  }
+  // @media screen and (min-width: 768px) {
+  //     display: none;
+  // }
 }
 
-// .menu-button--close{
-//     position: absolute;
-//     top: 10px;
-//     right: 15px;
-// }
 
 .menu-button__icon {
   color: red;
   transition: color $timing-function $cubic-hover;
 
-  .menu-button:hover &,
-  .menu-button:focus & {
+  .menu-button--close:hover &,
+  .menu-button--close:focus & {
     color: var(--accent-color);
   }
 }

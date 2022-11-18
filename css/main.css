@@ -852,18 +852,13 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
-}
 
 .menu-button__icon {
   color: red;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-button:hover .menu-button__icon, .menu-button:focus .menu-button__icon {
+.menu-button--close:hover .menu-button__icon, .menu-button--close:focus .menu-button__icon {
   color: var(--accent-color);
 }
 
