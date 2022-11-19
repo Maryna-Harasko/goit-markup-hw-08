@@ -38,31 +38,26 @@
   min-width: 40px;
   margin: 0;
   padding: 0;
-  // color: var(--title-text-color);
+  fill: var(--title-text-color);
   border: none;
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  transition: color $timing-function $cubic-hover;
-
-  // &:hover{
-  //   color: var(--accent-color);
-  // }
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-// .menu-button__icon {
-//   color: red;
-//   transition: color $timing-function $cubic-hover;
+.menu-button__icon {
+  fill: var(--title-text-color);
+  transition: color $timing-function $cubic-hover;
 
-//   .menu-button--close:hover &,
-//   .menu-button--close:focus & {
-//     color: var(--accent-color);
-//   }
-// }
+  .menu-button:hover &,
+  .menu-button:focus & {
+    fill: var(--accent-color);
+  }
+}
 
 .mobile-menu {
   &__nav {

@@ -1,12 +1,12 @@
 .portfolio-card {
   @extend %list;
-  @include flexCenter();
-  flex-wrap: wrap;
-  gap: 30px;
+  // @include flexCenter();
+  // flex-wrap: wrap;
+  // gap: 30px;
 
-  &__item {
-    width: calc((100% - 60px) / 3);
-  }
+  // &__item {
+  //   width: calc((100% - 60px) / 3);
+  // }
 
   &__wrap {
     padding: 20px 24px;
