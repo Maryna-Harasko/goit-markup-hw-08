@@ -71,12 +71,42 @@
             <li class="portfolio-card__item">
               <a href="#" class="portfolio-link">
                 <div class="portfolio-backdrop">
-                  <img
-                    src="./images/laptop.jpg"
-                    alt="Ноутбук з командою на екрані"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/laptop.webp 1x, ./images/mobile/laptop@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/laptop.webp 1x, ./images/tablet/laptop@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/laptop.webp 1x, ./images/desktop/laptop@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/mobile/laptop.jpg 1x, ./images/mobile/laptop@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/laptop.jpg 1x, ./images/tablet/laptop@2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/laptop.jpg 1x, ./images/desktop/laptop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      loading="lazy"
+                      src="./images/mobile/laptop.jpg"
+                      alt="екран ноутбуку, на заставці команда"
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -94,12 +124,60 @@
             <li class="portfolio-card__item">
               <a href="#" class="portfolio-link">
                 <div class="portfolio-backdrop">
-                  <img
-                    src="./images/basketball.jpg"
-                    alt="два байскетболіста в стрибку"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/basketball.webp    1x,
+                        ./images/mobile/basketball@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/basketball.webp    1x,
+                        ./images/tablet/basketball@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/basketball.webp    1x,
+                        ./images/desktop/basketball@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/basketball.jpg    1x,
+                        ./images/mobile/basketball@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/basketball.jpg    1x,
+                        ./images/tablet/basketball@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/basketball.jpg    1x,
+                        ./images/desktop/basketball@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      loading="lazy"
+                      src="./images/mobile/basketball.jpg"
+                      alt="два байскетболіста в стрибку"
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -119,12 +197,42 @@
             <li class="portfolio-card__item">
               <a href="#" class="portfolio-link">
                 <div class="portfolio-backdrop">
-                  <img
-                    src="./images/fish.jpg"
-                    alt="логотип рибного ресторану"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/fish.webp 1x, ./images/mobile/fish@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/fish.webp 1x, ./images/tablet/fish@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/fish.webp 1x, ./images/desktop/fish@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/mobile/fish.jpg 1x, ./images/mobile/fish@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/fish.jpg 1x, ./images/tablet/fish@2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/fish.jpg 1x, ./images/desktop/fish@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      loading="lazy"
+                      src="./images/mobile/fish.jpg"
+                      alt="логотип рибного ресторану"
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -142,7 +250,60 @@
             <li class="portfolio-card__item">
               <a href="#" class="portfolio-link">
                 <div class="portfolio-backdrop">
-                  <img src="./images/headphones.jpg" alt="навушники" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/headphones.webp    1x,
+                        ./images/mobile/headphones@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/headphones.webp    1x,
+                        ./images/tablet/headphones@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/headphones.webp    1x,
+                        ./images/desktop/headphones@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/headphones.jpg    1x,
+                        ./images/mobile/headphones@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/headphones.jpg    1x,
+                        ./images/tablet/headphones@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/headphones.jpg    1x,
+                        ./images/desktop/headphones@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      loading="lazy"
+                      src="./images/mobile/headphones.jpg"
+                      alt="навушники"
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -161,7 +322,42 @@
             <li class="portfolio-card__item">
               <a href="#" class="portfolio-link">
                 <div class="portfolio-backdrop">
-                  <img src="./images/box.jpg" alt="дві коробки" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/box.webp 1x, ./images/mobile/box@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/box.webp 1x, ./images/tablet/box@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/box.webp 1x, ./images/desktop/box@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/mobile/box.jpg 1x, ./images/mobile/box@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/box.jpg 1x, ./images/tablet/box@2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/box.jpg 1x, ./images/desktop/box@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      loading="lazy"
+                      src="./images/mobile/box.jpg"
+                      alt="дві коробки"
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -179,7 +375,42 @@
             <li class="portfolio-card__item">
               <a href="#" class="portfolio-link">
                 <div class="portfolio-backdrop">
-                  <img src="./images/monitor.jpg" alt="монітор з відкритим проектом" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/monitor.webp 1x, ./images/mobile/monitor@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/monitor.webp 1x, ./images/tablet/monitor@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/monitor.webp 1x, ./images/desktop/monitor@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/mobile/monitor.jpg 1x, ./images/mobile/monitor@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/monitor.jpg 1x, ./images/tablet/monitor@2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/monitor.jpg 1x, ./images/desktop/monitor@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      loading="lazy"
+                      src="./images/mobile/monitor.jpg"
+                      alt="монітор з відкритим проектом"
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -199,8 +430,45 @@
             <li class="portfolio-card__item">
               <a href="#" class="portfolio-link">
                 <div class="portfolio-backdrop">
-                  <img src="./images/magazine.jpg" alt="журнал" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/magazine.webp 1x, ./images/mobile/magazine@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/magazine.webp 1x, ./images/tablet/magazine@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/magazine.webp    1x,
+                        ./images/desktop/magazine@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/mobile/magazine.jpg 1x, ./images/mobile/magazine@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/magazine.jpg 1x, ./images/tablet/magazine@2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/magazine.jpg 1x, ./images/desktop/magazine@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
 
+                    <img
+                      loading="lazy"
+                      src="./images/mobile/magazine.jpg"
+                      alt="журнал"
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -220,7 +488,42 @@
             <li class="portfolio-card__item">
               <a href="#" class="portfolio-link">
                 <div class="portfolio-backdrop">
-                  <img src="./images/tag.jpg" alt="етикетка" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/tag.webp 1x, ./images/mobile/tag@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/tag.webp 1x, ./images/tablet/tag@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/tag.webp 1x, ./images/desktop/tag@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/mobile/tag.jpg 1x, ./images/mobile/tag@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/tag.jpg 1x, ./images/tablet/tag@2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/tag.jpg 1x, ./images/desktop/tag@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      loading="lazy"
+                      src="./images/mobile/tag.jpg"
+                      alt="етикетка"
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -238,12 +541,42 @@
             <li class="portfolio-card__item">
               <a href="#" class="portfolio-link">
                 <div class="portfolio-backdrop">
-                  <img
-                    src="./images/hand.jpg"
-                    alt="дві руки на клавіатурі ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/hand.webp 1x, ./images/mobile/hand@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/hand.webp 1x, ./images/tablet/hand@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/hand.webp 1x, ./images/desktop/hand@2x.webp 2x"
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/mobile/hand.jpg 1x, ./images/mobile/hand@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/hand.jpg 1x, ./images/tablet/hand@2x.jpg 2x"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/hand.jpg 1x, ./images/desktop/hand@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      loading="lazy"
+                      src="./images/mobile/hand.jpg"
+                      alt="дві руки на клавіатурі ноутбука"
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -265,63 +598,66 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__section">
-          <div class="footer__wrap">
-            <a class="logo footer__logo" href="./index.html" lang="en"
-              >Web<span class="logo logo_white">Studio</span></a
-            >
-            <address class="address">
-              <ul class="address__list">
-                <li class="address__item">
-                  <a
-                    class="address__link address__link_map"
-                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
+          <div class="footer__info">
+            <div class="footer__wrap">
+              <a class="logo footer__logo" href="./index.html" lang="en"
+                >Web<span class="logo logo_white">Studio</span></a
+              >
+              <address class="address">
+                <ul class="address__list">
+                  <li class="address__item">
+                    <a
+                      class="address__link address__link_map"
+                      href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="address__item">
+                    <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                  <li class="address__item">
+                    <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div>
+              <h2 class="footer__title">приєднуйтесь</h2>
+              <ul class="social-list">
+                <li>
+                  <a class="social-link social-link_grey" href="#"
+                    ><svg class="social-icon social-icon_white" width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address__item">
-                  <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li>
+                  <a class="social-link social-link_grey" href="#"
+                    ><svg class="social-icon social-icon_white" width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address__item">
-                  <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li>
+                  <a class="social-link social-link_grey" href="#"
+                    ><svg class="social-icon social-icon_white" width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-link social-link_grey" href="#"
+                    ><svg class="social-icon social-icon_white" width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
+            </div>
           </div>
-          <div>
-            <h2 class="footer__title">приєднуйтесь</h2>
-            <ul class="social-list">
-              <li>
-                <a class="social-link social-link_grey" href="#"
-                  ><svg class="social-icon social-icon_white" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="social-link social-link_grey" href="#"
-                  ><svg class="social-icon social-icon_white" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="social-link social-link_grey" href="#"
-                  ><svg class="social-icon social-icon_white" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="social-link social-link_grey" href="#"
-                  ><svg class="social-icon social-icon_white" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+
           <form class="footer__form" name="subscription">
             <div class="footer__subscription-form">
               <label class="footer__title" for="email">Підпишіться на розсилку</label>

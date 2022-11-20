@@ -1,12 +1,35 @@
 .portfolio-card {
   @extend %list;
-  // @include flexCenter();
-  // flex-wrap: wrap;
-  // gap: 30px;
 
-  // &__item {
-  //   width: calc((100% - 60px) / 3);
-  // }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include flexCenter();
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
+  }
 
   &__wrap {
     padding: 20px 24px;
@@ -30,8 +53,6 @@
 
 .portfolio-link {
   @include link();
-
-  
 }
 
 .portfolio-backdrop {
@@ -50,11 +71,11 @@
   transform: translateY(100%);
   transition: transform $timing-function $cubic-hover;
 
-.portfolio-link:hover &,
-.portfolio-link:focus & {
-  opacity: 1;
-  transform: translateY(0);
-}
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   &__text {
     font-size: 18px;

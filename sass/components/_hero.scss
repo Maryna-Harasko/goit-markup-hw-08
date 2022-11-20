@@ -7,22 +7,22 @@
     max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/hero_img_mob.jpg);
-    @include respBackg($url: url(../../images/hero_img_mob@2x.jpg));
+      url(../images/mobile/hero_img_mob.jpg);
+    @include respBackg($url: url(../images/mobile/hero_img_mob@2x.jpg));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     
     @media screen and (min-width:768px) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../../images/hero_img_tab.jpg);
-        @include respBackg($url: url(../../images/hero_img_tab@2x\ .jpg));
+          url(../images/tablet/hero_img_tab.jpg);
+        @include respBackg($url: url(../images/tablet/hero_img_tab@2x.jpg));
     }
 
     @media screen and (min-width:768px) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/hero_image.jpg);
-      @include respBackg($url: url(../../images/hero_image@2x.jpg));
+        url(../images/desktop/hero_image.jpg);
+      @include respBackg($url: url(../images/desktop/hero_image@2x.jpg));
     }
   }
 
